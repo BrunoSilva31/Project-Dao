@@ -41,6 +41,19 @@ public class Program2 {
         System.out.println("Inserted! New ID = " + dep2.getId());
 
 
+        System.out.println();
+        System.out.println(" === TEST4: department update === ");
+
+        dep = departmentDao.findById(3);
+        dep.setName("Programação");
+        departmentDao.update(dep);
+
+        System.out.println("Update completed!");
+
+
+
+        System.out.println();
+        System.out.println(" === TEST5: department update === ");
 
         sc.close();
     }
